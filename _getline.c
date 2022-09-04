@@ -5,7 +5,7 @@
 */
 char *_getline()
 {
-	int i, rd, buffsize = BUFSIZE;
+	int i, rd, buffsize = BUFSIZ;
 	char c = 0, *buffer, *buf;
 
 	buffer = malloc(buffsize);
@@ -43,10 +43,10 @@ char *_getline()
 	return (buf);
 }
 /**
- * enter - Handles newline character input
- * @string: String to be handled
- * Return: Empty string
- */
+* enter - Handles newline character input
+* @string: String to be handled
+* Return: Empty string
+*/
 char *enter(char *string)
 {
 	free(string);
@@ -54,10 +54,10 @@ char *enter(char *string)
 }
 
 /**
- * space - Modifies the input string to remove preceeding whitespaces
- * @str: Input to be modifies
- * Return: Returns the modified string
- */
+* space - Modifies the input string to remove preceeding whitespaces
+* @str: Input to be modifies
+* Return: Returns the modified string
+*/
 char *space(char *str)
 {
 	int i, j = 0;
@@ -85,10 +85,10 @@ char *space(char *str)
 	return (buff);
 }
 /**
- * hashtag_handler - function that removes everything after '#'
- * @buff: input buffer
- * Return: nothing
- */
+* hashtag_handler - function that removes everything after '#'
+* @buff: input buffer
+* Return: nothing
+*/
 void hashtag_handler(char *buff)
 {
 	int i;

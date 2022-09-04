@@ -1,11 +1,10 @@
 #include "shell.h"
-#include <stddef.h>
 /**
- * check_delim - function that checks if a character matchs any character
- * @c: character to check
- * @str: string of delimiters
- * Return: 1 on success, 0 on failure
- */
+* check_delim - function that checks if a character matchs any character
+* @c: character to check
+* @str: string of delimiters
+* Return: 1 on success, 0 on failure
+*/
 unsigned int check_delim(char c, const char *str)
 {
 	unsigned int i;
@@ -18,11 +17,11 @@ unsigned int check_delim(char c, const char *str)
 	return (0);
 }
 /**
- * _strtok - function that extracts tokens of a string
- * @str: string
- * @delim: delimiter
- * Return: pointer to the next token or NULL
- */
+* _strtok - function that extracts tokens of a string
+* @str: string
+* @delim: delimiter
+* Return: pointer to the next token or NULL
+*/
 char *_strtok(char *str, const char *delim)
 {
 	static char *tokens;

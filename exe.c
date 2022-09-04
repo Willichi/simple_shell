@@ -1,10 +1,10 @@
 #include "shell.h"
 /**
- * change_dir - Changes directory
- * @cmd: Parsed command
- * @st: Status of last command executed
- * Return: 0 on success 1 if failed (For OLDPWD Always 0 incase of no OLDPWD)
- */
+* change_dir - Changes directory
+* @cmd: Parsed command
+* @st: Status of last command executed
+* Return: 0 on success 1 if failed (For OLDPWD Always 0 incase of no OLDPWD)
+*/
 int change_dir(char **cmd, __attribute__((unused))int st)
 {
 	int value = -1;
@@ -33,11 +33,11 @@ int change_dir(char **cmd, __attribute__((unused))int st)
 	return (0);
 }
 /**
- * dis_env - Display enviroment variable
- * @cmd: parsed command
- * @st: status of last command executed
- * Return: Always 0
- */
+* dis_env - Display enviroment variable
+* @cmd: parsed command
+* @st: status of last command executed
+* Return: Always 0
+*/
 int dis_env(__attribute__((unused)) char **cmd, __attribute__((unused)) int st)
 {
 	size_t i;
@@ -52,11 +52,11 @@ int dis_env(__attribute__((unused)) char **cmd, __attribute__((unused)) int st)
 	return (0);
 }
 /**
- * echo_bul - execute echo cases
- * @st: statue of last command executed
- * @cmd: parsed command
- * Return: Always 1 Or execute normal echo
- */
+* echo_bul - execute echo cases
+* @st: statue of last command executed
+* @cmd: parsed command
+* Return: Always 1 Or execute normal echo
+*/
 int echo_bul(char **cmd, int st)
 {
 	char *path;
@@ -85,11 +85,11 @@ int echo_bul(char **cmd, int st)
 	return (1);
 }
 /**
- * history_dis - display history of user input on simple_shell
- * @c: parsed command
- * @st: status of last command executed
- * Return: 0 success or -1 if fail
- */
+* history_dis - display history of user input on simple_shell
+* @c: parsed command
+* @st: status of last command executed
+* Return: 0 success or -1 if fail
+*/
 int history_dis(__attribute__((unused))char **c, __attribute__((unused))int st)
 {
 	char *filename = ".simple_shell_history";

@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * check_builtin - Checks if parsed command in built-in
- * @cmd: Parsed command to be check
- * Return: 0 Succes -1 Fail
- */
+* check_builtin - Checks if parsed command in built-in
+* @cmd: Parsed command to be check
+* Return: 0 Succes -1 Fail
+*/
 
 int check_builtin(char **cmd)
 {
@@ -32,11 +32,11 @@ int check_builtin(char **cmd)
 }
 
 /**
- * handle_builtin - Handles predefined built in commands
- * @cmd: Array of parsed command strings
- * @st: Status of last execution
- * Return: -1 Failure 0 Success
- */
+* handle_builtin - Handles predefined built in commands
+* @cmd: Array of parsed command strings
+* @st: Status of last execution
+* Return: -1 Failure 0 Success
+*/
 
 int handle_builtin(char **cmd, int st)
 {
@@ -62,13 +62,13 @@ int handle_builtin(char **cmd, int st)
 }
 
 /**
- * exit_bul - Exit Status for built-in commands
- * @cmd: Array of parsed command strings
- * @input: Input recieved from user (to be freed)
- * @argv: Arguments before program starts(argv[0] == Shell Program Name)
- * @c: Shell execution count
- * @stat: Exit status
- */
+* exit_bul - Exit Status for built-in commands
+* @cmd: Array of parsed command strings
+* @input: Input recieved from user (to be freed)
+* @argv: Arguments before program starts(argv[0] == Shell Program Name)
+* @c: Shell execution count
+* @stat: Exit status
+*/
 
 void exit_bul(char **cmd, char *input, char **argv, int c, int stat)
 {

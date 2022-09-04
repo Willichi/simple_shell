@@ -1,13 +1,13 @@
 #include "shell.h"
 
 /**
- * check_cmd - Excutes commands found in predefined path
- * @cmd: Array of parsed command strings
- * @input: Input recieved from user (to be freed)
- * @c:Shell Excution Time Case of Command Not Found
- * @argv: Arguments before program starts(argv[0] == Shell Program Name)
- * Return: 1 Case Command Null -1 Wrong Command 0 Command Excuted
- */
+* check_cmd - Excutes commands found in predefined path
+* @cmd: Array of parsed command strings
+* @input: Input recieved from user (to be freed)
+* @c:Shell Excution Time Case of Command Not Found
+* @argv: Arguments before program starts(argv[0] == Shell Program Name)
+* Return: 1 Case Command Null -1 Wrong Command 0 Command Excuted
+*/
 
 int check_cmd(char **cmd, char *input, int c, char **argv)
 {
@@ -51,9 +51,9 @@ int check_cmd(char **cmd, char *input, int c, char **argv)
 }
 
 /**
- * signal_to_handle - Configures ^C not to terminate our shell
- * @sig: Incoming Signal
- */
+* signal_to_handle - Configures ^C not to terminate our shell
+* @sig: Incoming Signal
+*/
 
 void signal_to_handle(int sig)
 {
